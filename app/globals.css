@@ -1,6 +1,10 @@
-@import 'tailwindcss';
-@import 'tailwindcss';
-@import 'shadcn/tailwind.css';
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-roboto);
+  --font-display: var(--font-anton);
 
 @custom-variant dark (&:is(.dark *));
 
